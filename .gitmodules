@@ -1,0 +1,3 @@
+[submodule "rtl4432mqtt"]
+	path = rtl4432mqtt
+	url = git@github.com:csacca/rtl4432mqtt.git

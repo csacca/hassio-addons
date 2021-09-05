@@ -5,3 +5,7 @@ addons:
     repository: csacca/rtl4432mqtt
     target: rtl4432mqtt
     image: ghcr.io/csacca/rtl4432mqtt/{arch}
+  mqtt-explorer:
+    repository: csacca/addon-mqtt-explorer
+    target: mqtt-explorer
+    image: ghcr.io/csacca/mqtt-explorer/{arch}

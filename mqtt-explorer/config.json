@@ -1,0 +1,33 @@
+{
+  "name": "MQTT Explorer",
+  "version": "0.0.1",
+  "slug": "mqtt-explorer",
+  "description": "Home Assistant addon for MQTT Explorer",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armv7"
+  ],
+  "url": "https://github.com/csacca/addon-mqtt-explorer",
+  "boot": "manual",
+  "init": false,
+  "ingress": true,
+  "ingress_entry": "vnc_lite.html",
+  "panel_icon": "mdi:cloud-outline",
+  "services": [
+    "mqtt:need"
+  ],
+  "map": [
+    "addons:rw"
+  ],
+  "schema": {
+    "log_level": "list(trace|debug|info|notice|warning|error|fatal)?"
+  },
+  "ports": {
+    "5900/tcp": null
+  },
+  "ports_description": {
+    "5900/tcp": "MQTT Explorer via VNC (Not required for Ingress. Not secure!)"
+  },
+  "image": "ghcr.io/csacca/mqtt-explorer/{arch}"
+}
